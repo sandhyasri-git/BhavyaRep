@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div class="container" ng-controller="FriendController as ctrl">	   
+		   
+	Welcome to friends	   
+	<div ng-repeat="friend in ctrl.friends">	   
+	<a href="#" ng-click="ctrl.getSelectedFriend(friend.id)">Title:{{friend.title}}	   
+	Written By: {{friend.User_name}}</a>	   
+	</div>	   
+	</div>	 
+	
+</body>
+</html>

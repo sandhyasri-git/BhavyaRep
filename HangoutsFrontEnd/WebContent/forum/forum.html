@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="container" ng-controller="ForumController as ctrl">	   
+		   
+	Welcome to forumns	   
+	<div ng-repeat="forum in ctrl.forumns">	   
+	<a href="#" ng-click="ctrl.getSelectedForum(forum.id)">Title:{{forum.title}}	   
+	Written By: {{forum.User_name}}</a>	   
+	</div>	   
+	</div>	
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="container" ng-controller="JobController as ctrl">	   
+		   
+	Welcome to jobs	   
+	<div ng-repeat="job in ctrl.blogs">	   
+	<a href="#" ng-click="ctrl.getSelected(job.id)">Title:{{job.title}}	   
+	Written By: {{job.User_name}}</a>	   
+	</div>	   
+	</div>	 
+</body>
+</html>
